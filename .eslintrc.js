@@ -7,7 +7,8 @@ module.exports = {
   // 配置包拓展，可以拓展他人集成的规则集
   extends: [
     'plugin:react/recommended',
-    'standard'
+    'standard',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
