@@ -1,0 +1,5 @@
+{
+  "*.{js,jsx}": ["prettier --write .", "eslint  --fix"],
+  "*.ts?(x)": ["eslint", "prettier --parser=typescript --write"],
+  "*.md": ["prettier --write"]
+}

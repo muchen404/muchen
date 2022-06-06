@@ -5,11 +5,7 @@ module.exports = {
     es2021: true
   },
   // 配置包拓展，可以拓展他人集成的规则集
-  extends: [
-    'plugin:react/recommended',
-    'standard',
-    'prettier'
-  ],
+  extends: ['plugin:react/recommended', 'standard', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -18,10 +14,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint'
-  ],
-  rules: {
-  }
+  plugins: ['react', '@typescript-eslint'],
+  rules: {}
 }

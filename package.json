@@ -4,7 +4,8 @@
   "description": "这是一个我自己用于练习的仓库，目标是完成一套包含移动端App，微信小程序，Web端以及后台的点餐系统",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "node ./scripts/preinstall.js",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,21 @@
   "bugs": {
     "url": "https://github.com/muchen404/muchen/issues"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "homepage": "https://github.com/muchen404/muchen#readme",
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^17.0.2",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -28,6 +40,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
     "prettier": "^2.6.2",
     "typescript": "^4.7.3"
   }
