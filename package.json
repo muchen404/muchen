@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "node ./scripts/preinstall.js",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "dev:h5": "pnpm --filter @muchen/h5 dev"
   },
   "repository": {
     "type": "git",

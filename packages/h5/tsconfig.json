@@ -1,0 +1,6 @@
+{
+	"extends": "../../tsconfig",
+	"compilerOptions": {
+		"composite": true // 必须设置为true，表明该文件夹为一个子项目
+	}
+}
