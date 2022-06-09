@@ -6,5 +6,8 @@
     "dev": "vite"
   },
   "author": "muchen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "6"
+  }
 }
